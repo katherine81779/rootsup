@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect
+import json
 app = Flask(__name__)
 
 totalPoints = 0
@@ -6,8 +7,6 @@ username = ""
 
 from nutritionix import Nutritionix
 nix = Nutritionix(app_id="cf89e5fd", api_key="a5dbbc411a9326eb6c9391e93071677e")
-pizza = nix.search("chicken")
-results = pizza.json()
 
 
 @app.route("/")
@@ -41,6 +40,16 @@ def enterHours():
         totalPoints += points
 
         return redirect("/categories")
+
+@app.route("/inputFood", methods = ['POST', 'GET'])
+def enterFood():
+    if request.method == 'POST':
+        foodInput = request.form['foodItem']
+        nix.search(foodInput)
+        results = foodInput.json()
+        print(results)
+
+        print(nix.search().nxql(fields=["nf_calories"]).json())
 
 
 
