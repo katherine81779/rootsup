@@ -3,6 +3,16 @@
 <head>
 	<title> roots </title>
     {% include 'header.html' %}
+  <style>
+  h1{
+    Font-size: 70px;
+    text-align: center;
+    Line-height: 200px;
+  }
+  form{
+    Text-align: center;
+  }
+  </style>
 
 </head>
 
@@ -13,6 +23,8 @@
 
 	<h1> CATEGORIES </h1>
 	<form action = '/fitness'>
-	<p> <button type = "submit">FITNESS</button> </p>
+	<button type="button" class="btn btn-success mr-2">FITNESS</button>
+	<button type="button" class="btn btn-warning mr-2">DIET</button>
+	<button type="button" class="btn btn-info">SLEEP</button>
 	</form> 
 </body>
