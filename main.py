@@ -2,11 +2,13 @@ from flask import Flask, render_template, request, redirect
 app = Flask(__name__)
 
 totalPoints = 0
+username = ""
 
 
 @app.route("/")
 def redir():
     return render_template('index.html')
+
 
 @app.route("/categories")
 def goToCategoriesPage():
@@ -14,11 +16,11 @@ def goToCategoriesPage():
 
 @app.route("/diet")
 def goToDietPage():
-    return render_template('diet.html')
+    return render_template('diet.html', totalPoints = totalPoints)
 
 @app.route("/fitness")
 def goToFitnessPage():
-    return render_template('fitness.html')
+    return render_template('fitness.html', totalPoints = totalPoints)
 
 @app.route("/sleep")
 def goToSleepPage():
