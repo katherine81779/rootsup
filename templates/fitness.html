@@ -3,7 +3,9 @@
 <html>
 <head>
 	<title> rootsup </title>
+
     {% include 'header.html' %}
+
 
 </head>
 
@@ -12,75 +14,33 @@
 <body>
 
 
-
 <div class = "container">
 	<h1> FITNESS </font> </h1>
+
+	<p>
+
 	<p> What form of exercise did you just complete? </p>
 
-	<p> 
-	Exercises: <br>
-	For these exercises please input the number of MINUTES it took you
-	to complete the exercise:<br>
-	
 	<form>
-	<div class = "row">
-	<div class = "col">
-	JOGGING: <br>
-	<input type = "text" name = "jog">
-	<br>
-	</div>
-
-	<div class = "col">
-	RUNNING: <br>
-	<input type = "text" name = "run">
-	<br>
-	</div>
-
-	<div class = "col">
-	CYCLING: <br>
-	<input type = "text" name = "cycle">
-	<br>
-	</div>
-	
-	<div class = "col">
-	SWIMMING:
-	<input type = "text" name = "swim">
-	<br>
-	</div>
-
-	</div>
-
-
-	<br> <br> <br>     
-
-	Please input the total number of SETS you completed: <br>
-	<div class = "row">
-
-	<div class = "col">
-	PUSH-UPS: <br>
-	<input type = "text" name = "pushup">
-	</div>
-	<div class = "col">
-	LEG LIFTS: <br>
-	<input type = "text" name = "run">
-	</div>
-	<div class = "col">
-	PULL UPS: <br>
-	<input type = "text" name = "pullup">
-	</div>
-	<div class = "col">
-	SQUATS: <br>
-	<input type = "text" name = "squats">
+	<div class = "dropdown"> 
+	<button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
+	EXERCISES 
+	</button>
+	<div class = "dropdown-menu">
+	<div class = "dropdown-header"> Enter MINUTES </div>
+	<a class="dropdown-item" href="#">Jogging</a>
+	<a class="dropdown-item" href="#">Running</a>
+    	<a class="dropdown-item" href="#">Cycling</a>
+	<a class="dropdown-item" href="#">Swimming</a>
+	<div class = "dropdown-header"> Enter REPS </div>
+	<a class="dropdown-item" href="#">Push-ups</a>
+	<a class="dropdown-item" href="#">Leg Lifts</a>
+    	<a class="dropdown-item" href="#">Squats</a>
+	<a class="dropdown-item" href="#">Pull-ups</a>
 	</div>
 	</div>
-	
-	<div class = "row">
-	<br>
-	<button type="button" class="btn btn-primary">SUBMIT</button>
-	</div>
+	<input type = "text" name = "exercisenum"> <br>
 	</form>
-
-	</p>
 	
 	
 
