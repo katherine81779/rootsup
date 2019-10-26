@@ -12,6 +12,12 @@
   form{
     Text-align: center;
   }
+  .btn-block{
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius 10px;
+    width: 20%
   </style>
 
 </head>
@@ -26,8 +32,8 @@
 
 	<h1> CATEGORIES </h1>
 	<form action = '/fitness'>
-	<button type="button" class="btn btn-success mr-2">FITNESS</button>
-	<button type="button" class="btn btn-warning mr-2">DIET</button>
-	<button type="button" class="btn btn-info">SLEEP</button>
+	<a href="/fitness"><button type="button" class="btn btn-success btn-block mx-auto">FITNESS</button></a>
+	<a href="/diet"><button type="button" class="btn btn-warning btn-block mx-auto">DIET</button></a>
+	<a href="sleep"><button type="button" class="btn btn-info btn-block mx-auto">SLEEP</button></a>
 	</form> 
 </body>
