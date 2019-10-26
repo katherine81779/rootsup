@@ -17,13 +17,7 @@ coming soon
 What makes your project stand out?
 
 ## How to use?
-This website is simple to use. 
-
-## Contribute
-
-Let people know how they can contribute into your project. A [contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md) will be a big plus.
+This website is simple to use. There are clear divisions in different health categories - fitness, diet, and more. After the user clicks on the category, it leads to specific activities they may input information for to earn points. The score is easy accessible on the top right of all pages.
 
 ## Credits
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project. 
-
-#### Anything else that seems useful
+coming soon
