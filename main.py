@@ -24,7 +24,7 @@ def goToFitnessPage():
 
 @app.route("/sleep")
 def goToSleepPage():
-    return render_template('sleep.html')
+    return render_template('sleep.html', totalPoints = totalPoints)
 
 @app.route("/inputSleep", methods = ['POST', 'GET'])
 def enterHours():
