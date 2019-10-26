@@ -24,10 +24,12 @@ def goToSleepPage():
 @app.route("/inputSleep", methods = ['POST', 'GET'])
 def enterHours():
     global totalPoints
+
     if request.method == 'POST':
         hours = request.form['hours']
-        points = hours * 10
+        points = int(hours) * 10
         totalPoints += points
+        print(totalPoints)
 
         return redirect("/categories")
 
