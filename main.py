@@ -12,6 +12,9 @@ def redir():
 def goToCategoriesPage():
     return render_template('categories.html', totalPoints = totalPoints)
 
+@app.route("/diet")
+def goToDietPage():
+    return render_template('diet.html')
 
 @app.route("/fitness")
 def goToFitnessPage():
@@ -29,7 +32,6 @@ def enterHours():
         hours = request.form['hours']
         points = int(hours) * 10
         totalPoints += points
-        print(totalPoints)
 
         return redirect("/categories")
 
