@@ -4,6 +4,11 @@ app = Flask(__name__)
 totalPoints = 0
 username = ""
 
+from nutritionix import Nutritionix
+nix = Nutritionix(app_id="cf89e5fd", api_key="a5dbbc411a9326eb6c9391e93071677e")
+pizza = nix.search("chicken")
+results = pizza.json()
+
 
 @app.route("/")
 def redir():
