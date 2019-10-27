@@ -6,6 +6,12 @@
 
     {% include 'header.html' %}
 
+    <style>
+    .row {
+        border: 1px;
+    }  
+    </style>
+
 
 </head>
 
@@ -21,29 +27,26 @@
 
         <p> Which healthy hangout did you participate in?</p>
 
-        <form>
-        <div class = "row">
-            <div class = "col">
-                <button type = "button" class = "btn btn-primary btn-lg">Basketball with Kasey</button>
+        
+        <div class="container">
+            <div class="row text-center">
+              <div class="col-3">
+                <button type="button" class="btn btn-primary btn-block">Basketball with Kasey!</button>
+              </div>
+              <div class="col-3">
+                <button type="button" class="btn btn-success btn-block">Dancing with Hana!</button>
+              </div>
+              <div class="col-3">
+                <button type="button" class="btn btn-warning btn-block">Tennis with Becca!</button>
+              </div>
+              <div class="col-3">
+                <button type="button" class="btn btn-danger btn-block">Laughing at Katherine's jokes!</button>
+              </div>
             </div>
-            <div class = "col">
-                <button type = "button" class = "btn btn-info btn-lg">Dancing with Hana</button>
-            </div>
-        </div>
-        <br> <br>
-        <div class = "row">
-            <div class = "col">
-                <button type = "button" class = "btn btn-dark btn-lg"> Tennis with Becca</button>
-            </div>
-            <div class = "col">
-                <button type = "button" class = "btn btn-danger btn-lg">Laughing at Katherine's Jokes</button>
-            </div>
-        </div>
-        </form>
+          </div>
 
 
-
-
+    </div>
 
 
 </body>
