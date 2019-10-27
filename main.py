@@ -23,13 +23,19 @@ def goToCategoriesPage():
 def goToDietPage():
     return render_template('diet.html', totalPoints = totalPoints, calories = calories)
 
-@app.route("/fitness")
+@app.route("/healthyhangouts")
 def goToFitnessPage():
-    return render_template('fitness.html', totalPoints = totalPoints)
+    return render_template('healthyhangouts.html', totalPoints = totalPoints)
 
 @app.route("/sleep")
 def goToSleepPage():
     return render_template('sleep.html', totalPoints = totalPoints)
+
+@app.route("/addPoints")
+def addPointsHH():
+    global totalPoints
+    totalPoints += 100
+    return redirect("/categories")
 
 @app.route("/inputSleep", methods = ['POST', 'GET'])
 def enterHours():
